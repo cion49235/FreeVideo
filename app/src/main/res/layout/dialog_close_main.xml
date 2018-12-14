@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <FrameLayout
+        android:id="@+id/layout_dialog_close"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_popup_close"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:layout_marginBottom="100dp"
+            android:orientation="vertical">
+            <link.app.byunm.Util.CircleViewFlipper
+                android:id="@+id/vfPop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            </link.app.byunm.Util.CircleViewFlipper>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom|center"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/bt_close"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bt_popup_close_01"/>
+            <ImageView
+                android:id="@+id/bt_finish"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bt_popup_close_02"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
